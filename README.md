@@ -8,7 +8,7 @@ This program uses 3 classes:
 - PhonebookManager: This is handling operations including adding, deleting, modifying, and displaying the phonebook linked list.
 - PhonebookTest: This demonstrates the usage of PhonebookManager by adding, printing, modifying, and deleting different entries.
 
-In this way we are able to create a link of data nodes, starting at the head and traversing until we run out of nodes to connect to, based on how many people we have data for, called a linked list.
+In this way we are able to create a link of nodes, starting at the head and traversing until we run out of nodes to connect to, based on how many people we have data for, called a linked list.
 
 Thank you for checking out my program, 
 If you have questions please reach out at: Jackalbrecht5@gmail.com
