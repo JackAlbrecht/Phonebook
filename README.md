@@ -11,6 +11,7 @@ In this way we are able to create a link of nodes, starting at the head and trav
 Thank you for checking out my program, 
 
 If you have questions please reach out at: Jackalbrecht5@gmail.com
+
 ---------------------------------------------------------------------------------------------------------------------------------
 This program is a Computer Science 2 (CS145) project for Prof. Darrell Criss at Whatcom Community College, Spring 2023.
 
