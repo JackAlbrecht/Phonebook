@@ -1,5 +1,5 @@
 # Phonebook
-This program is a Computer Science 2 (CS145) project called "Assignment 2: Phonebook" at Whatcom Community College, Spring 2023.
+This program is a Computer Science 2 (CS145) project for Prof. Darrell Criss called "Assignment 2: Phonebook" at Whatcom Community College, Spring 2023.
 
 Phonebook is a program to demonstrate a single linked list. This allows us to change modify, add, and delete data from a node, in this way we are able to edit a phonebook log in real time.
 
