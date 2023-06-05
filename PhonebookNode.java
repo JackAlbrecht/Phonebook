@@ -1,5 +1,4 @@
-// PhonebookNode class represents a single node in the phonebook linked list and stores the data for the provided Strings.------------------------------------------------------------------------------------
-class PhonebookNode {
+// PhonebookNode class represents a single node in the phonebook linked list and stores the data for the provided Strings.
    String firstName;
    String lastName;
    String address;
