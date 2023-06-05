@@ -1,3 +1,4 @@
+// PhonebookTest class is used to demonstrate the usage of PhonebookManager with PhonebookNode.
 class PhonebookTest {
    public static void main(String[] args) {
       PhonebookManager manager = new PhonebookManager();
