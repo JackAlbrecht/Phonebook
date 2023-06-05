@@ -1,3 +1,4 @@
+//PhonebookManager class handles operations on the phonebook node
 class PhonebookManager {
    private PhonebookNode head;
 
@@ -11,10 +12,10 @@ class PhonebookManager {
       PhonebookNode newNode = new PhonebookNode(firstName, lastName, address, city, phoneNumber);
       if (head == null) {
          head = newNode;
-      } else {
-         newNode.next = head;
-         head = newNode;
-      }
+         } else {
+            newNode.next = head;
+            head = newNode;
+         }
       System.out.println("Entry added successfully.");
    }
 
@@ -24,7 +25,6 @@ class PhonebookManager {
          System.out.println("Phonebook is empty.");
          return;
       }
-   
       if (head.phoneNumber.equals(phoneNumber)) {
          head = head.next;
          System.out.println("Entry deleted successfully.");
@@ -34,16 +34,15 @@ class PhonebookManager {
       PhonebookNode prevNode = head;
       PhonebookNode currNode = head.next;
    
-      while (currNode != null && !currNode.phoneNumber.equals(phoneNumber)) { //Checks to see if phone number of the current node doesnt equal the correct phone number, and ends makes sure there is a current node. EXTRA CREDIT //continued use of != which means is not equal to EXTRA CREDIT
-         prevNode = currNode; // && means if both items are true then continue. EXTRA CREDIT
+      while (currNode != null && !currNode.phoneNumber.equals(phoneNumber)) { //Checks to see if phone number of the current node doesn't equal the correct phone number, and makes sure there is a current node.
+         prevNode = currNode; 
          currNode = currNode.next;
       }
-   
-      if (currNode != null) { //continued use of != which means is not equal to EXTRA CREDIT
+      if (currNode != null) { 
          prevNode.next = currNode.next;
          System.out.println("Entry deleted successfully.");
-      } else {
-         System.out.println("Entry not found.");
+         } else {
+            System.out.println("Entry not found.");
       }
    }
 
@@ -51,7 +50,7 @@ class PhonebookManager {
    public void modifyEntry(String phoneNumber, String newFirstName, String newLastName, String newAddress, String newCity) {
       PhonebookNode currNode = head;
    
-      while (currNode != null) {//continued use of != which means is not equal to EXTRA CREDIT
+      while (currNode != null) {
          if (currNode.phoneNumber.equals(phoneNumber)) {
             currNode.firstName = newFirstName;
             currNode.lastName = newLastName;
@@ -72,9 +71,9 @@ class PhonebookManager {
       boolean found = false;
    
       while (currNode != null) {
-         if (currNode.firstName.equalsIgnoreCase(searchString) || // this is a logical OR operator and can be used to evaluate multiple conditions to see if ONE of them is true EXTRA CREDIT
-            currNode.lastName.equalsIgnoreCase(searchString) || // Starts at the left and goes to the right (top to bottom). This checks to see if the information matches basically. EXTRA CREDIT
-            currNode.address.equalsIgnoreCase(searchString) ||
+         if (currNode.firstName.equalsIgnoreCase(searchString) || //this is a logical OR operator and can be used to evaluate multiple conditions to see if ONE of them is true
+            currNode.lastName.equalsIgnoreCase(searchString) || //Starts at the left and goes to the right (top to bottom). This checks to see if the information matches, basically.
+            currNode.address.equalsIgnoreCase(searchString) || //If one of these are THE SAME, then the program will grab the data from the corresponding node, and then use it later by showing the info with println.
             currNode.city.equalsIgnoreCase(searchString) ||
             currNode.phoneNumber.equals(searchString)) {
             System.out.println("Entry found:");
@@ -89,7 +88,7 @@ class PhonebookManager {
          currNode = currNode.next;
       }
    
-      if (!found) { // ! Is if not found compared to normally is found EXTRA CREDIT
+      if (!found) {
          System.out.println("Entry not found.");
       }
    }
